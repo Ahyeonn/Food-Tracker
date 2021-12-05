@@ -6,29 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food Calculator</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
 	<!-- Title -->
-    <div class="d-flex justify-content-center align-items-center">
-        <h1 class="fw-light m-0" style="font-size: 35px; color: rgb(69, 143, 133); padding: 45px 0px;">FOOD CALCULATOR</h1>
-        <img src="./images/calculator.jpeg" width="53px" class="ms-4" alt=":(">
-      </div>
+	<div class="container">
+		<div class="row text-nowrap">
+			<div class="col-sm-3 col-1 d-flex">
+				<div class="d-flex justify-content-center ms-5">
+					<div class="d-flex align-items-center">
+						<p class="me-3 px-2 pt-3 fw-normal text-secondary" style="font-size: 18px;">Click Here To Listen</p>
+						<img src="./images/play.png" width="60px" id="icon" style="cursor: pointer;">
+					</div>
+					<audio id="mySong">
+						<source src="./media/Mysterious Palm Trees.mp3" type="audio/mp3">
+					</audio>
+				</div>
+			</div>
+			<div class="col-sm-6 col-2 d-flex align-items-center justify-content-center">
+				<h1 class="fw-light m-0" style="font-size: 35px; color: rgb(69, 143, 133); padding: 45px 0px;">FOOD CALCULATOR</h1>
+				<img src="./images/calculator.jpeg" width="53px" class="ms-4" alt=":(">
+			</div>
+		</div>
+	</div>
 	<!-- Nav Bar -->
-  <ul class="nav justify-content-center py-1" style="background-color: rgb(65, 122, 111);">
-    <li class="nav-item  d-flex align-items-center">
-      <a class="nav-link home text-white" href="./home.html">HOME</a>
-    </li>
-		<li class="nav-item d-flex align-items-center">
-      <a class="nav-link text-white ms-1" href="#">DAILY-CALORIE</a>
-    </li>
-    <li class="nav-item d-flex align-items-center">
-      <a class="nav-link text-white ms-1" href="#">CALORIE-TRACKER</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white fw-bold" style="font-size: 18px;" href="#">ABOUT US</a>
-    </li>
-  </ul>
+    <ul class="nav justify-content-center py-1 d-flex align-items-center" style="background-color: rgb(65, 122, 111);">
+        <li class="nav-item">
+            <a class="nav-link text-white" href="./home.html">HOME</a>
+        </li>
+	    <li class="nav-item">
+            <a class="nav-link text-white ms-1" href="./daily-calorie.html">DAILY-CALORIE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white ms-1" href="#">CALORIE-TRACKER</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white fw-bold" style="font-size: 18px;" href="./about-us.html">ABOUT US</a>
+        </li>
+    </ul>
+  </header>
   <!-- Grid -->
   <div class="container pt-5">
     <div class="row">
@@ -73,7 +89,6 @@
                     <p class="fw-light fs-5">- Mark Hyman, M.D.</p>
                 </div>
             </div>
-            <!-- <img src="./images/pig.gif" alt="" style="float: right;" width="610px" height="430px" class="mt-5 pb-5"> -->
         </div>
         <!-- Third -->
         <div class="col-sm-12 col-8 d-flex py-5  border-bottom border-success mb-5">
@@ -103,14 +118,9 @@
             </div>
         </div>
     </div>
-</div>
-<div class="d-flex justify-content-center align-items-center border" style="width: 1425px; height: 68px; background-color: rgb(65, 122, 111);">
-    <audio autoplay controls>
-        <source src="media/Mysterious Palm Trees.mp3" type="audio/mp3">
-    </audio>
-</div>
+  </div>
 <!-- JavaScript-->
 <script src="./scripts/scripts.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
 </body>
 </html>
