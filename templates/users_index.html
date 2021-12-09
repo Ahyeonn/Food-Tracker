@@ -1,10 +1,21 @@
-<!-- templates/home.html -->
+<!-- templates/users_index.html -->
 {% extends 'base.html' %}
 
 {% block content %}
     <h1>Calorie Tracker</h1>
+    <div class="d-flex flex-column">
+    <a href="/users/new">Add User</a>
     {% for user in users %}
+        {% if user.gender == 'Male' %}
+            gender male {{ user.gender }}
+            <img src="./static/css/images/male.png" width="250px">
+        {% elif user.gender == 'Female' %}
+            gender female {{ user.gender}}
+            <img src="./static/css/images/female.png" width="250px">
+        {% endif %}
         <h2>{{ user.name }}</h2>
-        <small>{{ user.profile }}</small>
+        <small>{{ user.gender }}</small>
+        <small>{{ user.state }}</small>
     {% endfor %}
+    </div>
 {% endblock %}

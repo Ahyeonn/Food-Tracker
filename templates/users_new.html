@@ -1,0 +1,29 @@
+<!-- templates/users_new.html -->
+{%  extends 'base.html' %}
+
+{% block content %}
+<form method='POST' action='/users'>
+    <!-- TITLE -->
+    <h1>New User</h1>
+    <p>
+        <label>Name</label><br>
+        <input type='text' name='name' class="form-control" placeholder="Name" required>
+    </p>
+    <p>
+        <label>Gender</label><br>
+        <select class="form-select" name="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </p>
+    <p>
+        <label>State</label><br>
+        <input type="text" name="state" class="form-control"required placeholder="CA">
+    </p>
+
+    <!-- BUTTON -->
+    <p>
+        <button type='submit' class="form-control">Create User</button>
+    </p>
+</form>
+{% endblock %}
