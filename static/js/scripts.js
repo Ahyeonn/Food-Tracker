@@ -17,10 +17,10 @@ var icon = document.getElementById("icon");
 icon.onclick = function(){
     if(mySong.paused){
         mySong.play();
-        icon.src = "./images/pause.png"
+        icon.src = "/static/css/images/pause.png"
     }else{
         mySong.pause();
-        icon.src = "./images/play.png"
+        icon.src = "/static/css/images/play.png"
     }
 }
 

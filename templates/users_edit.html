@@ -1,5 +1,5 @@
-<!-- templates/users_new.html -->
-{%  extends 'base.html' %}
+<!-- templates/users_edit.html -->
+{% extends 'base.html' %}
 
 {% block content %}
 <!-- Title -->
@@ -28,11 +28,15 @@
 </ul>
 </header>
 
-<form method='POST' action='/users'>
+<form method='POST' action='/users/{{ user._id }}'>
     {% include 'partials/users_form.html' %}
     <!-- BUTTON -->
-    <p>
-        <button type='submit' class="form-control">Create User</button>
-    </p>
+                <p>
+                    <button style="width: 100px;" type='submit' class="form-control border-dark mt-3 fs-5">Edit</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 </form>
 {% endblock %}

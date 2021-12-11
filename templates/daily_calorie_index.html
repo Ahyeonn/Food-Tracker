@@ -12,36 +12,36 @@
 	<!-- Title -->
 	<div class="container">
 		<div class="row text-nowrap">
-			<div class="col-sm-3 col-1 d-flex">
-				<div class="d-flex justify-content-center ms-5">
+			<div class="col-sm-3 d-flex">
+				<div class="d-flex">
 					<div class="d-flex align-items-center">
-						<p class="me-3 px-2 pt-3 fw-normal text-secondary" style="font-size: 18px;">Click Here To Listen</p>
-						<img src="./images/play.png" width="60px" id="icon" style="cursor: pointer;">
+						<p class="me-3 px-2 pt-3 text-secondary" style="font-size: 18px;">Click Here To Listen</p>
+						<img src="/static/css/images/play.png" width="60px" id="icon" style="cursor: pointer;">
 					</div>
 					<audio id="mySong">
-						<source src="./media/Mysterious Palm Trees.mp3" type="audio/mp3">
+						<source src="/static/media/Mysterious Palm Trees.mp3" type="audio/mp3">
 					</audio>
 				</div>
 			</div>
-			<div class="col-sm-6 col-2 d-flex align-items-center justify-content-center">
-				<h1 class="fw-light m-0" style="font-size: 35px; color: rgb(69, 143, 133); padding: 45px 0px;">FOOD CALCULATOR</h1>
-				<img src="./images/calculator.jpeg" width="53px" class="ms-4" alt=":(">
+			<div class="col-sm-6 d-flex align-items-center justify-content-center">
+				<h1 class="fw-light" style="font-size: 35px; color: rgb(69, 143, 133); padding: 45px 0px;">FOOD CALCULATOR</h1>
+				<img src="/static/css/images/calculator.jpeg" width="53px" class="ms-4" alt=":(">
 			</div>
 		</div>
 	</div>
 	<!-- Nav Bar -->
-    <ul class="nav justify-content-center py-1" style="background-color: rgb(65, 122, 111);">
-      <li class="nav-item  d-flex align-items-center">
-        <a class="nav-link home text-white" href="./home.html">HOME</a>
+    <ul class="nav d-flex align-items-center justify-content-center py-1" style="background-color: rgb(65, 122, 111);">
+      <li>
+        <a class="nav-link text-white" href="/home">HOME</a>
       </li>
-      <li class="nav-item d-flex align-items-center">
-        <a class="nav-link text-white ms-1 fw-bold" style="font-size: 18px;" href="./daily-calorie.html">DAILY-CALORIE</a>
+      <li>
+        <a class="nav-link text-white ms-1 fw-bold" style="font-size: 18px;" href="/daily_calorie">DAILY-CALORIE</a>
       </li>
-      <li class="nav-item d-flex align-items-center">
-        <a class="nav-link text-white ms-1" href="#">CALORIE-TRACKER</a>
+      <li>
+        <a class="nav-link text-white ms-1" href="/">CALORIE-TRACKER</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="./about-us.html">ABOUT US</a>
+      <li>
+        <a class="nav-link text-white" href="/about_us">ABOUT US</a>
       </li>
     </ul>
   </header>
@@ -49,10 +49,10 @@
   <div class="container pt-5">
     <div class="row">
       <div class="d-flex border-bottom border-success" style="height: 550px;">
-        <div class="col-sm-6 col-1 d-flex flex-column justify-content-start align-items-center mt-3">
-            <img src="./images/food-scale.jpeg"class="img-fluid" style="width: 600px;height: 475px;">
+        <div class="col-sm-6 d-flex flex-column mt-3">
+            <img src="/static/css/images/food-scale.jpeg"class="img-fluid" style="width: 600px;height: 475px;">
         </div>
-        <div class="col-sm-6 col-2 d-flex flex-column justify-content-start align-items-center mt-3">
+        <div class="col-sm-6 d-flex flex-column justify-content-start align-items-center mt-3">
           <div style="width: 600px;height: 475px;border:solid;  border-color:rgba(106, 139, 99, 0.749);" class="border-2">
             <div class="d-flex flex-column align-items-center justify-content-center" style=" height: 450px;">
               <h2 class="py-4 fs-2 fw-normal" style="color: rgb(36, 114, 104);">CHECK YOUR CALORIE</h2>
@@ -61,25 +61,25 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-3 pb-5 border-bottom border-success mt-5">
+      <div class="col-sm-12 pb-5 border-bottom border-success mt-5">
         <div style="background-color: rgba(239, 239, 239, 0.482);" class="py-4 w-100">
-          <!-- <p>* The calories that are display is to maintain your current weight.</p> -->
+          <p class="fw-light ms-3 pb-3" style="color: rgb(111, 111, 111)">* The displayed calorie value is what is needed to maintain your current weight.</p>
           <div class="pb-5 d-flex align-items-center flex-column">
             <h3 class="text-center pb-3 fw-light fs-1" style="color: rgb(36, 114, 104);">Men's Calorie Calculator</h3>
-            <div class="d-flex align-items-center">
-              <div class="d-flex flex-column me-3" style="width: 100px; height: 70px;">
-                <p class="text-center fw-light fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Weight</p>
+            <div class="d-flex align-items-center text-center">
+              <div class="me-3" style="width: 100px; height: 70px;">
+                <p class="fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Weight</p>
                 <input type="number" placeholder="kg" class="text-center form-control" min= 0 id="men-weight">
               </div>
-              <div class="d-flex flex-column me-3" style="width: 100px; height: 70px;">
-                <p class="text-center fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Height</p>
+              <div class="me-3" style="width: 100px; height: 70px;">
+                <p class="fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Height</p>
                 <input type="number" placeholder="cm" class="text-center form-control" min= 0 id="men-height">
               </div>
-              <div class="d-flex flex-column me-3 text-center" style="width: 100px; height: 70px;">
+              <div class="me-3" style="width: 100px; height: 70px;">
                 <p class="fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Age</p>
                 <input type="number" placeholder="age" class="text-center form-control" min= 0 id="men-age">
               </div>
-              <div class="d-flex flex-column me-3 pb-3" style="width: 228px; height: 70px;">
+              <div class="me-3" style="width: 228px; height: 70px;">
                 <p class="text-center fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Physical Activity</p>
                 <select class="form-select" required id="men-physical-activity">
                   <option selected disabled>Select Physicacl Activity</option>
@@ -101,19 +101,19 @@
             <div class="pb-4 d-flex align-items-center flex-column">
               <h3 class="text-center pb-3 pt-4 fw-light fs-1" style="color: rgb(36, 114, 104);">Women's Calorie Calculator</h3>
               <div class="d-flex align-items-center">
-                <div class="d-flex flex-column me-3" style="width: 100px; height: 70px;">
-                  <p class="text-center fw-light fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Weight</p>
+                <div class="me-3" style="width: 100px; height: 70px;">
+                  <p class="fw-light fw-normal text-center fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Weight</p>
                   <input type="number" placeholder="kg" class="text-center form-control" min= 0 id="women-weight">
                 </div>
-                <div class="d-flex flex-column me-3" style="width: 100px; height: 70px;">
+                <div class="me-3" style="width: 100px; height: 70px;">
                   <p class="text-center fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Height</p>
                   <input type="number" placeholder="cm" class="text-center form-control" min= 0 id="women-height">
                 </div>
-                <div class="d-flex flex-column me-3 text-center" style="width: 100px; height: 70px;">
+                <div class="me-3 text-center" style="width: 100px; height: 70px;">
                   <p class="fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Age</p>
                   <input type="number" placeholder="age" class="text-center form-control" min= 0 id="women-age">
                 </div>
-                <div class="d-flex flex-column me-3" style="width: 228px; height: 70px;">
+                <div class="me-3" style="width: 228px; height: 70px;">
                   <p class="text-center fw-normal fs-5 pb-4" style="height: 13px; color: rgb(69, 143, 133)">Physical Activity</p>
                   <select class="form-select" required id="women-physical-activity">
                     <option selected disabled>Select Physicacl Activity</option>
@@ -134,12 +134,12 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-12 col-10">
-				<div class=" d-flex flex-column justify-content-center" style="height: 200px; color: rgb(69, 143, 133);">
+      <div class="col-sm-12">
+				<div style="height: 200px; color: rgb(69, 143, 133);">
 					<div class="d-flex justify-content-center pb-4">
-						<a href="#"><img src="./images/facebook.png" width="15px" class="fw-light pt-5 pb-3 text-center me-2" style="font-size:55px;"></a>
-						<a href="#"><img src="./images/twitter.png" width="30px" class="fw-light pt-5 pb-3 text-center ms-4 me-2" style="font-size:55px;"></a>
-						<a href="#"><img src="./images/linkedin.png" width="26px" class="fw-light pt-5 pb-3 text-center ms-4 me-1" style="font-size:55px;"></a>
+						<a href="#"><img src="/static/css/images/facebook.png" width="15px" class="fw-light pt-5 pb-3 text-center me-2" style="font-size:55px;"></a>
+						<a href="#"><img src="/static/css/images/twitter.png" width="30px" class="fw-light pt-5 pb-3 text-center ms-4 me-2" style="font-size:55px;"></a>
+						<a href="#"><img src="/static/css/images/linkedin.png" width="26px" class="fw-light pt-5 pb-3 text-center ms-4 me-1" style="font-size:55px;"></a>
 					</div>
 					<p class="fw-light text-center" style="font-size: 15px;">ahyeon.jeon@students.dominican.edu</p>
 				</div>
@@ -147,6 +147,6 @@
     </div>
   </div>
 <!-- JavaScript-->
-<script src="./scripts/scripts.js"></script>
+<script src="/static/js/scripts.js"></script>
 </body>
 </html>

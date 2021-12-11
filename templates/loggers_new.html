@@ -1,0 +1,54 @@
+<!-- templates/loggers_new.html -->
+{%  extends 'base.html' %}
+
+{% block content %}
+<!-- Title -->
+<div class="container">
+    <div class="row text-nowrap">
+        <div class="col-sm-12 col-2 d-flex align-items-center justify-content-center">
+            <h1 class="fw-light m-0" style="font-size: 35px; color: rgb(69, 143, 133); padding: 45px 0px;">FOOD CALCULATOR</h1>
+            <img src="/static/css/images/calculator.jpeg" width="53px" class="ms-4" alt=":(">
+        </div>
+    </div>
+</div>
+<!-- Nav Bar -->
+<ul class="nav justify-content-center py-1 d-flex align-items-center mb-3" style="background-color: rgb(65, 122, 111);">
+    <li class="nav-item">
+        <a class="nav-link text-white" href="/home">HOME</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white ms-1" href="/daily_calorie">DAILY-CALORIE</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white ms-1 fw-bold" style="font-size: 18px;" href="/">CALORIE-TRACKER</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white" href="/about_us">ABOUT US</a>
+    </li>
+</ul>
+</header>
+<form method='POST' action='/entries/loggers'>
+    <input type='hidden' value='{{ entry_id }}' name='entry_id'/>
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-sm-12 col-1">
+                <div class="border border-3 py-5 d-flex flex-column align-items-center">
+                <h1 class="text-center fw-light">Daily Tracker</h1>
+                <p class="w-75 fs-4 fw-light">
+                    <label class="ms-1 mb-2">Food Name</label><br>
+                    <input type='text' name='food_name' class="form-control" placeholder="Name" required>
+                </p>
+                <p class="w-75 fs-4 fw-light">
+                    <label class="ms-1 mb-2">Calorie</label><br>
+                    <input type='number' class="form-control" name="food_calorie" placeholder="Calorie" min='0' required>
+                </p>
+
+                <!-- BUTTON -->
+                <p class='form-group pt-5'>
+                    <button type='submit' class="form-control border-dark fs-5">Add History</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}
